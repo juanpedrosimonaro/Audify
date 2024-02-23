@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Audify</title>
+  <meta name="description" content="Pagina presentación Audify">
+  <meta name="keywords" content="HTML, CSS, JavaScript, prueba">
+  <meta name="author" content="Juan Simonaro">
+  <link rel="stylesheet" href="css/indexStyle.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<header>
+		<img id="logo" src="images\_949fe5b3-050b-40d4-bd13-eabb15628281.png" />
+		<h1>AUDIFY</h1>
+	</header>
+	<main>
+		<div class="left">
+			<div class="slider">
+				<img src="images\istockphoto-520437809-1024x1024-removebg.png" alt="Mujer con audífonos">
+				<img src="images\istockphoto-174648609-1024x1024-removebg.png" alt="Mujer con audífonos">
+				<img src="images\istockphoto-804367694-1024x1024-removebg.png" alt="Mujer con audífonos">
+			</div>
+			<div id="slogan">
+				<br>
+				<p>CON AUDIFY...</p>
+				<br>
+				<p>LLEVA TU AUDIO ADONDE SEA...</p>
+			</div >
+		</div>
+		<div class="right">
+			<h1>Iniciar Sesión</h1>
+			<form action="playlists.html" method="get">
+				<input type="text" id="username" name="username" placeholder="Usuario">
+				<input type="password" id="password" name="password" placeholder="Contraseña">
+				<button id="login-btn" type="submit">Iniciar</button>
+			</form>
+				<a href="registro.html"><button type="button">Registrarse</button></a>
+		</div>
+	</main>
+
+	<footer>
+		<div class="social">
+			<a href="https://www.twitter.com"><img src="images/twitter.svg" alt="Twitter"></a>
+			<a href="https://www.facebook.com"><img src="images/facebook.svg" alt="Facebook"></a>
+		</div>
+		<div class="copy">
+			<p> Copyright Juan Simonaro</p>
+		</div>
+		<div class="social">
+			<a href="https://www.github.com"><img src="images/github.svg" alt="Github"></a>
+			<a href="https://www.linkedin.com"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+		</div>
+	</footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+  <script src="js/loginLocalStorage.js"></script>
+</body>
+</html>
+

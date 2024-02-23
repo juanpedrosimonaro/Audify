@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+  margin: 0 100px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Barlow', sans-serif;
+  background-color: yellow;
+}
+
+main {
+  margin: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-bottom: 200px;
+}
+
+
+.right {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  gap: 50px;
+  border: 5px solid black;
+  padding: 10px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px
+}
+
+header h1 {
+  font-family: 'Bangers';
+  letter-spacing: 10px;
+  color: black;
+  font-size: 96px;
+  margin-left: 50px;
+}
+
+#logo {
+  width: 120px;
+  height: auto;
+}
+
+input[type="text"] {
+  width: 100%;
+  border: 5px solid black;
+  text-align: center;
+  font-family: 'Barlow';
+  font-size: 20px;
+  width: calc(100% - 10px); 
+  height: 40px;
+}
+
+input[type="text"]::placeholder {
+  text-align: center;
+  color: black;
+  font-family: 'Barlow';
+  font-size: 20px;
+}
+
+button {
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: black;
+  border: 0px;
+  height: 50px;
+  cursor: pointer;
+  font-family: 'Barlow';
+  font-size: 20px;
+}
+
+.right h1 {
+  font-family: 'Bangers';
+}
+
+.left h1 {
+  font-family: 'Bangers';
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+#busqueda {
+  margin-top: 20px;
+  grid-column-start: 5;
+  grid-column-end: 10;
+  
+}
+
+table{
+  border: 0;
+  width: 100%;
+}
+
+th {
+  font-family: 'Bangers';
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  margin-top: 50px;
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+}
+
+#audioPlayer {
+  width:350px;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+  width: 100px;
+  gap:40px;
+}
+
+.info img {
+  height:100%;
+  width:auto;
+}
+.info a {
+  height:100%;
+  width:auto;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.copy p {
+  color: black;
+  font-size: 30px;
+}
+
+#playlists-btn {
+  margin-top: 20px;
+  grid-column-start: 6;
+  grid-column-end: 9;
+}
+
+#meGusta {
+  filter:invert(1);
+}
+
+#miniatura {
+  margin-left: 250px;
+}
+
+#canal {
+  margin-right: 100px;
+}
+
+#titulo {
+  width: 400px;
+}
+
+#cerrar-sesion-btn {
+  
+}
+
+.menuPlaylist {
+	display: none; 
+	position: relative; 
+	top: 0px; 
+	left: 0; 
+	list-style: none; 
+	margin: 0; 
+	padding: 0; 
+	background: white; 
+	border: 1px solid black; 
+}
+
+.menuPlaylist:hover {
+	display:block;
+}
+
+.elementoPlaylist {
+	width: 100px; 
+	height: 30px; 
+	line-height: 30px; 
+	text-align: center; 
+}
+
+.plus-btn:hover + .menuPlaylist {
+	display:block;
+}

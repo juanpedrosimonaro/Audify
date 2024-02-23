@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Audify</title>
+  <meta name="description" content="Pagina presentación Audify">
+  <meta name="keywords" content="HTML, CSS, JavaScript, prueba">
+  <meta name="author" content="Juan Simonaro">
+  <link rel="stylesheet" href="css/busquedaStyle.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <script src="index.js"></script>
+</head>
+<body>
+	<header>
+		<img id="logo" src="images\_949fe5b3-050b-40d4-bd13-eabb15628281.png" />
+		<h1>AUDIFY</h1>
+	</header>
+  <a href="index.html"><button id="cerrar-sesion-btn" >Cerrar Sesión</button></a>
+	<main>
+		<div class="right">
+      <h1>Resultados: <span id="resultadoBusqueda"></span></h1>
+      <table border="0">
+        <thead>
+          <tr>
+            <th>Imagen</th>
+            <th>Título</th>
+            <th>Canal</th>
+            <th>Fecha</th>
+            <th></th>
+          </tr>
+        </thead> 
+        <tbody id="cuerpoTabla">
+        </tbody> 
+      </table>
+		</div>
+		<button id="playlists-btn" >Mis Playlists</button>
+	</main>
+
+	<footer>
+		<div class="info">
+      <img id="miniatura" />
+      <p id="fecha"></p>
+      <img id="meGusta" />
+		</div>
+		<div class="audioPlayerDiv">
+			<audio id="audioPlayer" controls autoplay></audio>
+		</div>
+		<div class="info">
+		  <p id="titulo"></p>	
+		  <p id="canal"></p>	
+		</div>
+	</footer>
+
+  <script src="js/obtenedorEnlacesYoutube.js"></script>
+  <script src="js/busquedaManagement.js"></script>
+</body>
+</html>
+
